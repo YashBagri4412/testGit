@@ -84,6 +84,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 )
               ],
             ),
+            Feature2(
+              input: "This is Feature2",
+            ),
           ],
         ),
       ),
