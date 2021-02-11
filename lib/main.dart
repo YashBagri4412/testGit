@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.purple,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
@@ -62,13 +62,13 @@ class _MyHomePageState extends State<MyHomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                IconButton(
+                FloatingActionButton(
                   onPressed: _incrementCounter,
-                  icon: Icon(Icons.add),
+                  child: Icon(Icons.add),
                 ),
-                IconButton(
+                FloatingActionButton(
                   onPressed: _decrementCounter,
-                  icon: Icon(Icons.linear_scale_rounded),
+                  child: Icon(Icons.linear_scale_rounded),
                 ),
               ],
             )
