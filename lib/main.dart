@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:testGit/feature2.dart';
 
 void main() {
   runApp(MyApp());
@@ -78,6 +79,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Icon(Icons.linear_scale_rounded),
                 ),
               ],
+            ),
+            Feature2(
+              input: "This is Feature2",
             )
           ],
         ),
