@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:testGit/feature1.dart';
 
 void main() {
   runApp(MyApp());
@@ -77,8 +78,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   onPressed: _decrementCounter,
                   child: Icon(Icons.linear_scale_rounded),
                 ),
+                Feature1(
+                  input: "Feature 1",
+                )
               ],
-            )
+            ),
           ],
         ),
       ),
