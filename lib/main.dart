@@ -50,6 +50,12 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _multiplyByTwo() {
+    setState(() {
+      _counter = _counter * 2;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -77,15 +83,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 FloatingActionButton(
                   onPressed: _decrementCounter,
-                  child: Icon(Icons.linear_scale_rounded),
+                  child: Icon(Icons.horizontal_rule_rounded),
                 ),
-                Feature1(
-                  input: "Feature 1",
-                )
+                FloatingActionButton(
+                  onPressed: _multiplyByTwo,
+                  child: Icon(Icons.cancel_sharp),
+                ),
               ],
-            ),
-            Feature2(
-              input: "This is Feature2",
             ),
           ],
         ),
